@@ -24,18 +24,19 @@
 using namespace std;
 using namespace cv;
 
-class DetectRegions{
-    public:
-        DetectRegions();
-        string filename;
-        void setFilename(string f);
-        bool saveRegions;
-        bool showSteps;
-        vector<Plate> run(Mat input);
-    private:
-        vector<Plate> segment(Mat input);
-        bool verifySizes(RotatedRect mr);
-        Mat histeq(Mat in);
+class DetectRegions {
+ public:
+  DetectRegions();
+  string filename;
+  void setFilename(string f);
+  bool saveRegions;
+  bool showSteps;
+  vector<Plate> run(Mat input);
+
+ private:
+  vector<Plate> segment(Mat input);
+  bool verifySizes(RotatedRect mr);
+  Mat histeq(Mat in);
 };
 
 #endif
