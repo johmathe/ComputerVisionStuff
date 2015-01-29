@@ -1,0 +1,8 @@
+Mostly code from the Mastering opencv with practical computer vision projects.
+
+Some edits here and there.
+
+mkdir build
+cd build
+cmake ..
+make
